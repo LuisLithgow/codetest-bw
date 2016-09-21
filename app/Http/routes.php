@@ -11,6 +11,12 @@
 |
 */
 
+// welcome/index main route
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Route controller for admin page
+Route::get('/admin', function() {
+  return view('admin');
 });
