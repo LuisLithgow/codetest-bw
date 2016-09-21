@@ -12,11 +12,10 @@
 */
 
 // welcome/index main route
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', 'PagesController@getIndex');
 
 // Route controller for admin page
-Route::get('/admin', function() {
-  return view('admin');
-});
+Route::get('/admin', 'PagesController@getAdmin');
