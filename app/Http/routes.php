@@ -19,3 +19,5 @@ Route::get('/', 'PagesController@getIndex');
 
 // Route controller for admin page
 Route::get('/admin', 'PagesController@getAdmin');
+
+Route::get('/about', 'PagesController@getAbout');
