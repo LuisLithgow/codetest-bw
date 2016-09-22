@@ -47,7 +47,7 @@
                 <div class="title">ZX Company</div>
 
 
-                <form action="{{ route('posts/store') }}" method="POST" >
+                <form action="posts/create" method="POST" >
                     <div class="col-sm-6">
                         <input type="text" placeholder="First Name" name="fname"><br>
                         <input type="text" placeholder="Last Name" name="lname"><br>

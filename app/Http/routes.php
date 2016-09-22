@@ -18,4 +18,5 @@
 Route::get('/', 'PagesController@getIndex');
 Route::get('/admin', 'PagesController@getAdmin');
 Route::get('/about', 'PagesController@getAbout');
-Route::resource('posts', 'PostController');
+Route::resource('/posts', 'PostController');
+
