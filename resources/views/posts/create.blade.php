@@ -38,13 +38,19 @@
     </head>
     <body>
         <div class="container">
-            <nav><a href="/">Home</a></nav>
-            <nav><a href="/admin">Admin Login</a></nav>
+            <nav>
+              <a href="/"> Home </a>
+              <a href="/admin"> Admin Login </a>
+              <a href="/about"> About </a>
+            </nav>
             <div class="content">
-                <div class="title">About {{ $fullName }} </div>
-                <h2>email me at: {{ $email }} </h2>
-
-
+                <form action="" class="form-group">
+                  <h3>Signup</h3>
+                  <input type="text" placeholder="name" name="name">
+                  <input type="text" placeholder="email" name="email">
+                  <input type="text" placeholder="password" name="password">
+                  <input type="submit">
+                </form>
 
 
             </div>

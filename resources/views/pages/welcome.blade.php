@@ -38,36 +38,42 @@
     </head>
     <body>
         <div class="container">
-            <nav><a href="/admin">Admin Login</a></nav>
-            <nav><a href="/about">About</a></nav>
+            <nav>
+                <a href="/admin">Admin Login</a>
+                <a href="/about">About</a>
+                <a href="/posts/create">Create</a>
+            </nav>
             <div class="content">
-                <div class="title">Laravel 5</div>
-                <form action="">
+                <div class="title">ZX Company</div>
+
+
+                <form action="{{ route('posts/store') }}" method="POST" >
                     <div class="col-sm-6">
-                        <input type="text" placeholder="First Name" name=""><br>
-                        <input type="text" placeholder="Last Name" name=""><br>
-                        <input type="text" placeholder="Address 1" name=""><br>
-                        <input type="text" placeholder="Address 2" name=""><br>
-                        <input type="text" placeholder="City" name=""><br>
-                        <input type="text" placeholder="State" name=""><br>
-                        <input type="text" placeholder="Zipcode" name=""><br>
-                        <input type="text" placeholder="Contact Phone" name=""><br>
-                        <input type="text" placeholder="Email Address" name=""><br>
-                        <input type="text" placeholder="Company Information" name=""><br>
+                        <input type="text" placeholder="First Name" name="fname"><br>
+                        <input type="text" placeholder="Last Name" name="lname"><br>
+                        <input type="text" placeholder="Address 1" name="address"><br>
+                        <input type="text" placeholder="Address 2" name="address2"><br>
+                        <input type="text" placeholder="City" name="city"><br>
+                        <input type="text" placeholder="State" name="state"><br>
+                        <input type="text" placeholder="Zipcode" name="zipcode"><br>
+                        <input type="text" placeholder="Contact Phone" name="phone"><br>
+                        <input type="text" placeholder="Email Address" name="email"><br>
+                        <input type="text" placeholder="Company Information" name="company_info"><br>
                     </div>
 
                     <div class="col-sm-6">
-                        <input type="text" placeholder="Company Name" name=""> <br>
-                        <input type="text" placeholder="Company Address" name=""><br>
-                        <input type="text" placeholder="Company City" name=""><br>
-                        <input type="text" placeholder="Company State" name=""><br>
-                        <input type="text" placeholder="Company Zipcode" name=""><br>
-                        <input type="text" placeholder="Company Phone Number" name=""><br>
+                        <input type="text" placeholder="Company Name" name="company_name"> <br>
+                        <input type="text" placeholder="Company Address" name="company_address"><br>
+                        <input type="text" placeholder="Company City" name="company_city"><br>
+                        <input type="text" placeholder="Company State" name="company_state"><br>
+                        <input type="text" placeholder="Company Zipcode" name="company_zipcode"><br>
+                        <input type="text" placeholder="Company Phone Number" name="company_phone"><br>
                         <input type="file" accept="application/pdf" id="exampleInputFile" name="pdf_file" >
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <!-- <input type="text" placeholder="Invoice Attachment"><br> -->
                     </div>
 
-                    <input class="btn " type="submit">
+                    <input class="btn btn-success btn-block " type="submit">
                 </form>
 
             </div>

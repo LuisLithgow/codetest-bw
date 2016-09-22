@@ -41,9 +41,15 @@
             <nav><a href="/">Home</a></nav>
             <nav><a href="/about">About</a></nav>
             <div class="content">
-                <div class="title">Laravel 5</div>
-                <!-- <h1>hello</h1> -->
-                <h2>this is the admin page!</h2>
+                <div class="title">ZX Company</div>
+
+                <form action="" class="form-group">
+                    <h4>Sign In</h4>
+                    <input type="text" placeholder="email" name="email">
+                    <input type="text" placeholder="password" name="password">
+
+                    <input type="submit">
+                </form>
 
             </div>
         </div>
