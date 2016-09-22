@@ -22,7 +22,7 @@ class CreatePostsTable extends Migration
             $table->string('state');
             $table->integer('zipcode');
             $table->integer('phone');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->string('company_info');
             $table->string('company_name');
             $table->string('company_address');
@@ -30,7 +30,7 @@ class CreatePostsTable extends Migration
             $table->string('company_state');
             $table->integer('company_zipcode');
             $table->integer('company_phone');
-            $table->longblob('pdf_file');
+            $table->TEXT('pdf_file');
             $table->timestamps();
         });
     }
