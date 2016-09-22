@@ -38,30 +38,33 @@
     </head>
     <body>
         <div class="container">
+            <nav><a href="/admin">Admin Login</a></nav>
+            <nav><a href="/about">About</a></nav>
             <div class="content">
                 <div class="title">Laravel 5</div>
                 <form action="">
                     <div class="col-sm-6">
-                        <input type="text" placeholder="First Name"><br>
-                        <input type="text" placeholder="Last Name"><br>
-                        <input type="text" placeholder="Address 1"><br>
-                        <input type="text" placeholder="Address 2"><br>
-                        <input type="text" placeholder="City"><br>
-                        <input type="text" placeholder="State"><br>
-                        <input type="text" placeholder="Zipcode"><br>
-                        <input type="text" placeholder="Contact Phone"><br>
-                        <input type="text" placeholder="Email Address"><br>
-                        <input type="text" placeholder="Company Information"><br>
+                        <input type="text" placeholder="First Name" name=""><br>
+                        <input type="text" placeholder="Last Name" name=""><br>
+                        <input type="text" placeholder="Address 1" name=""><br>
+                        <input type="text" placeholder="Address 2" name=""><br>
+                        <input type="text" placeholder="City" name=""><br>
+                        <input type="text" placeholder="State" name=""><br>
+                        <input type="text" placeholder="Zipcode" name=""><br>
+                        <input type="text" placeholder="Contact Phone" name=""><br>
+                        <input type="text" placeholder="Email Address" name=""><br>
+                        <input type="text" placeholder="Company Information" name=""><br>
                     </div>
 
                     <div class="col-sm-6">
-                        <input type="text" placeholder="Company Name"> <br>
-                        <input type="text" placeholder="Company Address"><br>
-                        <input type="text" placeholder="Company City"><br>
-                        <input type="text" placeholder="Company State"><br>
-                        <input type="text" placeholder="Company Zipcode"><br>
-                        <input type="text" placeholder="Company Phone Number"><br>
-                        <input type="text" placeholder="Invoice Attachment"><br>
+                        <input type="text" placeholder="Company Name" name=""> <br>
+                        <input type="text" placeholder="Company Address" name=""><br>
+                        <input type="text" placeholder="Company City" name=""><br>
+                        <input type="text" placeholder="Company State" name=""><br>
+                        <input type="text" placeholder="Company Zipcode" name=""><br>
+                        <input type="text" placeholder="Company Phone Number" name=""><br>
+                        <input type="file" accept="application/pdf" id="exampleInputFile" name="pdf_file" >
+                        <!-- <input type="text" placeholder="Invoice Attachment"><br> -->
                     </div>
 
                     <input class="btn " type="submit">

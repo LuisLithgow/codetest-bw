@@ -38,6 +38,8 @@
     </head>
     <body>
         <div class="container">
+            <nav><a href="/">Home</a></nav>
+            <nav><a href="/admin">Admin Login</a></nav>
             <div class="content">
                 <div class="title">About {{ $fullName }} </div>
                 <h2>email me at: {{ $email }} </h2>
