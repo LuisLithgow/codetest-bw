@@ -47,7 +47,7 @@
                 <div class="title">ZX Company</div>
 
 
-                <form action="posts/create" method="POST" >
+                <form action="posts/store" method="POST" >
                     <div class="col-sm-6">
                         <input type="text" placeholder="First Name" name="fname"><br>
                         <input type="text" placeholder="Last Name" name="lname"><br>
@@ -78,5 +78,6 @@
 
             </div>
         </div>
+        <!-- <script src="../assets/js/script.js"></script> -->
     </body>
 </html>

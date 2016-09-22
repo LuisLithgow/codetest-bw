@@ -31,6 +31,7 @@ class CreatePostsTable extends Migration
             $table->integer('company_zipcode');
             $table->integer('company_phone');
             $table->TEXT('pdf_file');
+
             $table->timestamps();
         });
     }

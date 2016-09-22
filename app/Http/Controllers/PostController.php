@@ -27,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('/');
+        return view('posts/create');
     }
 
     /**
@@ -39,7 +39,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         //validate data
-        // $this->validate($request, array());
+        $this->validate($request, array());
         $post = new Post;
         $post ->fname = $request->fname;
         $post ->lname = $request->lname;
@@ -61,7 +61,8 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect()->route('posts/show', $post->id);
+        return redirect()->route('posts.show', $post->id);
+        // return response()->json(['response' => 'This is a post method!']);
 
     }
 
